@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Pitang Engineers</title>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div id="title">
+        <h1 id="id-h1" class="h1">Hello World</h1>
+        <div id="underline"></div>
+      </div>
+    </header>
+    
+    <main>
+      <article id="review" class="">
+        <div id="img" class="hide">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGe6Apr3Uybyg/profile-displayphoto-shrink_800_800/0/1611270837546?e=1617840000&v=beta&t=qoG_Iw1UiedyKQV9gaJp1OHOJL-I2t70fZEEORC2ApI"
+            alt="imagem Perfil" class="person-img">
+        </div>
+      
+        <h4 id="author" class="">Racine Felipe</h4>
+        <p id="job" class="hide">Estudante de Computação</p>
+        <p id="info" class="p">
+          Fã de senhor dos anéis e zumbis, gamer assíduo,
+          criado com Java na base, hoje me encaminho em direção ao Javascript, backend por escolha, frontend por obrigação
+          e para guardar os dados então MongoDB e Postgres estão na minha lista de must have.
+        </p>
+      </article>
+    
+      <article id="wish" class="">
+        <h3 id="h3Wish" class="hide">O que espero aprender neste curso</h3>
+        <span id="spanWish" class="">O que espero aprender neste curso</span>
+        <div id="oList" class="">
+          <ol>
+            <li>Aperfeiçoar meus conhecimentos em frontend e backend</li>
+            <li>Conhecer mais sobre HTML/CSS e dominar a ferramenta</li>
+            <li>Conhecer o Javascript e dominar a ferramenta</li>
+            <li>Conhecer o React e dominar a ferramenta</li>
+            <li>Conhecer o nodeJS e dominar a ferramenta</li>
+            <li>Ir do prototipagem ao Deploy</li>
+            <li>Finalizar o curso, com a sensação de dever cumprido</li>
+          </ol>
+        </div>
+      </article>
+    
+      <article id="article-form" class="">
+        <form id="form" class="formBasic" action="./usuario-cadastrado.html" onsubmit="return validateForm()">
+          <div>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario">
+          </div>
+          <br />
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha">
+          </div>
+          <br />
+          <a href="./esqueci-senha.html">Esqueci minha senha</a>
+          <br />
+          <br />
+          <div id="btn-area" class="">
+            <button type="reset" id="btnClear" class="btn-green">Limpar dados</button>
+            <button type="submit" id="btnSubmit" class="btn-green">Fazer Login</button>
+          </div>
+        </form>
+      </article>
+
+      <article id="checklist" class="">
+        <h3>Check List</h3>
+    
+        <div>
+          <input type="checkbox" id="h1Check" name="redHeader">
+          <label for="redHeader">Cabeçalho "Hello World" ficar vermelho</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="paragBlueCheck" name="paragBlue">
+          <label for="paragBlue">O paragráfo fique azul</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="formPaddingCheck" name="formPadding">
+          <label for="formPadding">Meu formulário tenha um padding de 20px</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="btnGreenCheck" name="btnGreen">
+          <label for="btnGreen">Meus botões tenham a cor verde</label>
+        </div>
+
+        <div class="btn-style">
+          <button id="btnBasico" class="" onclick="basicStyle()">Basico</button>
+          <button id="btnCss" class="" onclick="cssStyle()">THE POWER OF CSS</button>
+        </div>
+      </article>
+    </main>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+</html>
